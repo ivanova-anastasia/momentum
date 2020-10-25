@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="owfont-regular.css" />
+    <title>momentum</title>
+  </head>
+  <body>
+    <div class="weather_wrapper">
+      <div class="image_bg_changed">
+        <button class="image_bg_btn btn"></button>
+      </div>
+      <div class="weather .animated-border">
+        <div class="temperature_wrapper">
+          <i class="weather-icon owf"></i>
+          <p class="temperature_details">
+            <span class="temperature"></span>
+            <span>°C</span>
+          </p>
+        </div>
+        <div class="description_wrapper">
+          <div class="city editable_text" contenteditable="true">Минск</div>
+          <div class="humidity"></div>
+          <div class="wind"></div>
+          <div class="weather-description"></div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <time class="date_time">
+        <span id="time"></span>
+        <span id="date"></span>
+      </time>
+
+      <h1>
+        <div class="greeting_wrapper">
+          <span id="greeting"></span>
+          <div id="name" class="editable_text" contenteditable="true"></div>
+        </div>
+      </h1>
+      <h2>What Is Your Focus For Today?</h2>
+      <h2 id="focus" class="editable_text" contenteditable="true"></h2>
+    </main>
+    <div class="quote_wrapper">
+      <figure class="quote">
+        <button class="btn quote_btn"></button>
+        <blockquote class="blockquote">Quote loading...</blockquote>
+        <figcaption></figcaption>
+      </figure>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
